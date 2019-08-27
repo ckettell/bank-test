@@ -10,6 +10,4 @@ class BankStatementPrinter
     end
   printed.join('')
   end
-
-
 end
