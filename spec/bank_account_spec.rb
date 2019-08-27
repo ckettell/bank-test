@@ -24,4 +24,14 @@ describe BankAccount do
       expect(account.transactions.last).to eq({ :date => date, :credit => 100, :debit => 0, :balance => 100})
     end
   end
+
+  it 'When a user withdraws, it records the date, amount and balance' do
+    Timecop.freeze(2019, 8, 27) do
+      date = Time.new
+      account = BankAccount.new
+      account.deposit(100)
+      account.withdraw(50)
+      expect(account.transactions.last).to eq({ :date => date, :credit => 0, :debit => 50, :balance => 50})
+    end
+  end
 end

@@ -10,12 +10,12 @@ class BankAccount
 
   def deposit(amount)
     @balance += amount
-    date =
     @transactions << {:balance => @balance, :credit => amount, :debit => 0, :date => Time.new}
   end
 
   def withdraw(amount)
     @balance -= amount
+    @transactions << {:balance => @balance, :credit => 0, :debit => amount, :date => Time.new}
   end
 
 end
