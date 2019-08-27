@@ -11,4 +11,5 @@ class BankStatementPrinter
   printed.join('')
   end
 
+
 end
