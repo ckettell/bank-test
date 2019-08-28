@@ -11,12 +11,14 @@ class BankAccount
 
   def deposit(amount)
     raise 'Deposit must be an integer' unless amount.is_a? Numeric
+
     @balance += Transaction.new(amount).sum
     @transactions << {:balance => @balance, :credit => amount, :debit => 0, :date => Time.new}
   end
 
   def withdraw(amount)
     raise 'Deposit must be an integer' unless amount.is_a? Numeric
+
     @balance -= Transaction.new(amount).sum
     @transactions << {:balance => @balance, :credit => 0, :debit => amount, :date => Time.new}
   end
