@@ -39,4 +39,9 @@ describe BankAccount do
     account = BankAccount.new
     expect { account.deposit('abc') }.to raise_error('Deposit must be an integer')
   end
+
+  it 'raises an error when withdraw is not an integer' do
+    account = BankAccount.new
+    expect { account.withdraw('abc') }.to raise_error('Deposit must be an integer')
+  end
 end

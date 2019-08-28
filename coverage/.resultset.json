@@ -43,6 +43,11 @@
         1,
         2,
         null,
+        null,
+        1,
+        1,
+        2,
+        null,
         null
       ],
       "/Users/student/Projects/admin/bank-test/lib/bank_account.rb": [
@@ -53,8 +58,8 @@
         1,
         null,
         1,
-        7,
-        7,
+        8,
+        8,
         null,
         null,
         1,
@@ -64,11 +69,9 @@
         null,
         null,
         1,
+        4,
         3,
         3,
-        null,
-        null,
-        null,
         null,
         null,
         null
@@ -156,6 +159,6 @@
         null
       ]
     },
-    "timestamp": 1566982273
+    "timestamp": 1566982429
   }
 }
