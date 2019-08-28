@@ -34,4 +34,9 @@ describe BankAccount do
       expect(account.transactions.last).to eq({ :date => date, :credit => 0, :debit => 50, :balance => 50})
     end
   end
+
+  it 'raises an error when deposit is not an integer' do
+    account = BankAccount.new
+    expect { account.deposit('abc') }.to raise_error('Deposit must be an integer')
+  end
 end
