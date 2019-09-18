@@ -6,3 +6,7 @@ A quick go at the Bank Account tech test.
 - Deposit and withdraw ca$h
 - Account statement. Prints the date, amount and balance.
 - This data will be kept in memory.
+
+# Methodology
+
+I TDD'd this challenge using Ruby. 
